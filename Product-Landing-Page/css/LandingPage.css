@@ -37,3 +37,28 @@ nav {
     margin-left: 0;
     font-family: "Bebas Neue", sans-serif;
 }
+
+main {
+    border: black;
+    border-width: 5px;
+    border-style: solid;
+    position: absolute;
+    width: 1920px;
+    height: 900px;
+    top: 100px;
+    margin: 0;
+}
+
+#slogan {
+    position: relative;
+    height: max-content;
+    width: max-content;
+    justify-self: center;
+    border: black;
+    border-width: 5px;
+    border-style: solid;
+}
+
+#slogan-text {
+    text-align: center;
+}
