@@ -1,24 +1,26 @@
 header {
     display: flex;
     flex-direction: row;
-    width: 1920px;
+    width: 100vw;
     height: 100px;
     margin: 0;
     position: fixed;
     top: 0;
     left: 0;
     background-color: lavender;
+    z-index: 1;
 }
 
 #header-img {
 }
 
 nav {
-    width: auto;
-    height: auto;
-    position: absolute;
+    width: max-content;
+    height: 100;
+    position: fixed;
     right: 0;
     align-self: center;
+    background-color: lavender;
 }
 
 .nav-link {
@@ -39,26 +41,59 @@ nav {
 }
 
 main {
-    border: black;
-    border-width: 5px;
-    border-style: solid;
     position: absolute;
-    width: 1920px;
-    height: 900px;
+    width: 100vw;
+    height: 1500px;
     top: 100px;
+    left: 0;
     margin: 0;
+    background-color: lightsteelblue;
+    display: flex;
+    flex-direction: column;
 }
 
 #slogan {
     position: relative;
     height: max-content;
     width: max-content;
-    justify-self: center;
-    border: black;
-    border-width: 5px;
-    border-style: solid;
+    margin: 0 auto;
 }
 
 #slogan-text {
+    margin: 50px;
+    font-size: 30px;
+}
+
+#email-form-container {
+    position: relative;
+    height: 100px;
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
     text-align: center;
+    justify-self: center;
+}
+
+#email {
+    margin: 20px;
+}
+
+#submit {
+    align-self: center;
+    margin: 0 0 0 10px;
+}
+
+video {
+    background-color: black;
+    align-self: center;
+    margin-top: 100px;
 }
