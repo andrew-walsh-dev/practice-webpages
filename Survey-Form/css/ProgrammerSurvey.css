@@ -1,3 +1,53 @@
 html {
     background-image: url("../img/programming.jpeg");
 }
+
+main {
+    width: 900px;
+    height: 1500px;
+    border-radius: 15%;
+    background-color: rgba(250,250,250,.97);
+    display: flex;
+    flex: content-box;
+    position: absolute;
+    left: 27.5%;
+    flex-direction: column;
+}
+
+h1 {
+    position: center;
+    text-align: center;
+    font-family: Bebas Neue, sans-serif;
+    font-size: 60px;
+    color: #2104ff;
+    font-weight: bold;
+    padding: 20px 20px 0 20px;
+}
+
+#description {
+    position: relative;
+    font-size: 20px;
+    margin-top: 0;
+    font-style: italic;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#survey-form {
+    position: center;
+    top: 400px;
+    right: 400px;
+    text-align: center;
+    padding: 20px;
+}
+
+.form-item {
+    margin: 15px 0 50px 0;
+    width: 400px;
+    vertical-align: middle;
+}
+
+table {
+    position: relative;
+    left: 42%;
+}

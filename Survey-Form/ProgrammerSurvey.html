@@ -2,10 +2,63 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="css/ProgrammerSurvey.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Programming Survey</title>
 </head>
 <body>
-
+    <main>
+        <h1 id="title">Programming Survey</h1>
+        <p id="description">What kind of programmer are you?</p>
+        <form id="survey-form">
+            <label for="name">Name<br>
+            <input type="text" id="name" name="name" placeholder="Enter your name" class="form-item" required>
+            </label>
+            <br>
+            <label for="email">Email<br>
+                <input type="email" id="email" name="email" placeholder="Enter your email" class="form-item" required>
+            </label>
+            <br>
+            <label for="number">Age (optional)<br>
+                <input type="number" id="number" name="age" placeholder="Enter your age" class="form-item" min="1" max="120">
+            </label>
+            <br>
+            <label for="dropdown">Why do you program?<br>
+                <select id="dropdown" name="dropdown" class="form-item" required>
+                    <option value="hobbyist">I'm a hobbyist programmer</option>
+                    <option value="student">I'm a programming student</option>
+                    <option value="full-time">I program full-time for work</option>
+                    <option value="part-time">I program part-time for work</option>
+                </select>
+            </label>
+            <br>
+            <p>How much do you enjoy programming?</p>
+            <br>
+            <table>
+                <tr>
+                    <td><input type="radio" name="enjoy" id="love" value="love"</td>
+                    <td>I love it!</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="enjoy" id="like" value="like"</td>
+                    <td>I like it.</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="enjoy" id="okay" value="okay"</td>
+                    <td>It's okay.</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="enjoy" id="dislike" value="dislike"</td>
+                    <td>I dislike it.</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="enjoy" id="hate" value="hate"</td>
+                    <td>I hate it!</td>
+                </tr>
+            </table>
+        </form>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
