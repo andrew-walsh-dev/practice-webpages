@@ -31,3 +31,9 @@ nav {
     text-decoration: none;
     color: #292a33;
 }
+
+#header-name {
+    align-self: center;
+    margin-left: 0;
+    font-family: "Bebas Neue", sans-serif;
+}
