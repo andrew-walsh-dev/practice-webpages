@@ -12,15 +12,15 @@
         <h1 id="title">Programming Survey</h1>
         <p id="description">What kind of programmer are you?</p>
         <form id="survey-form">
-            <label for="name">Name<br>
+            <label for="name" id="name-label">Name<br>
             <input type="text" id="name" name="name" placeholder="Enter your name" class="form-item" required>
             </label>
             <br>
-            <label for="email">Email<br>
+            <label for="email" id="email-label">Email<br>
                 <input type="email" id="email" name="email" placeholder="Enter your email" class="form-item" required>
             </label>
             <br>
-            <label for="number">Age (optional)<br>
+            <label for="number" id="number-label">Age (optional)<br>
                 <input type="number" id="number" name="age" placeholder="Enter your age" class="form-item" min="1" max="120">
             </label>
             <br>
@@ -30,6 +30,7 @@
                     <option value="student">I'm a programming student</option>
                     <option value="full-time">I program full-time for work</option>
                     <option value="part-time">I program part-time for work</option>
+                    <option value="other">Other</option>
                 </select>
             </label>
             <br>
@@ -57,6 +58,51 @@
                     <td>I hate it!</td>
                 </tr>
             </table>
+            <p id="checks-header">Which programming languages do you use? (select all the apply)</p>
+            <table>
+                <tr>
+                    <td><input type="checkbox" value="python" </td>
+                    <td>Python</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" value="javascript" </td>
+                    <td>Javascript</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" value="java" </td>
+                    <td>Java</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" value="python" </td>
+                    <td>Python</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" value="c-sharp" </td>
+                    <td>C#</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" value="c" </td>
+                    <td>C</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" value="c-plus" </td>
+                    <td>C++</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" value="r" </td>
+                    <td>R</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" value="other" </td>
+                    <td>Other</td>
+                </tr>
+            </table>
+            <br>
+            <label for="comments" id="comments-header">Do you have any additional comments?<br>
+                <textarea id="comments" placeholder="Leave your comments here"></textarea>
+            </label>
+            <br>
+            <button type="submit" id="submit">Submit</button>
         </form>
     </main>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
